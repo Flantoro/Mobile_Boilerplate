@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config(); // Load environment variables from .env file
 export const config = {
   ...sharedConfig,
-  hostname: "trial.app.perfectomobile.com",
+  hostname: "trial.perfectomobile.com",
   path: "/nexperience/perfectomobile/wd/hub",
   port: 443,
   protocol: "https",
@@ -16,6 +16,8 @@ export const config = {
       //cloud: "trial.app",
       securityToken: process.env.PERFECTO_SECURITY_TOKEN,
       deviceName: "37271FDJH008ER",
+      automationName: "UiAutomator2",
+      waitForAvailableLicense: true,
       //platformName: "Android",
       // #in case of application testing instead of browser name
       // #appPackage: 'com.linkedin.android'
