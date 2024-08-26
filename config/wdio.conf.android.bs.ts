@@ -1,6 +1,6 @@
 import { config as sharedConfig } from "./wdio.conf.js";
 import dotenv from "dotenv";
-dotenv.config(); // Load environment variables from .env file
+dotenv.config();
 export const config = {
   ...sharedConfig,
   user: process.env.BROWSERSTACK_USERNAME,
@@ -22,7 +22,6 @@ export const config = {
       {
         app: "bs://734c724215623f6a60de4c72fd3a8a60db7187b7",
         buildIdentifier: "${BUILD_NUMBER}",
-        // opts: { forcelocal: false, localIdentifier: "webdriverio-appium-app-browserstack-repo" },
         browserstackLocal: true,
         testObservability: true,
         testObservabilityOptions: {

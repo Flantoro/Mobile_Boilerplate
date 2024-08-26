@@ -1,6 +1,6 @@
 import { config as sharedConfig } from "./wdio.conf.js";
 import dotenv from "dotenv";
-dotenv.config(); // Load environment variables from .env file
+dotenv.config();
 export const config = {
   ...sharedConfig,
   user: process.env.SAUCELABS_USER,
@@ -10,7 +10,7 @@ export const config = {
   capabilities: [
     {
       platformName: "Android",
-      "appium:app": "storage:filename=Android-MyDemoAppRN.1.3.0.build-244.apk", // The filename of the mobile app
+      "appium:app": "storage:filename=calculator v8.4 for Sauce Labs.apk",
       "appium:deviceName": "Android GoogleAPI Emulator",
       "appium:platformVersion": "12.0",
       "appium:automationName": "UiAutomator2",

@@ -26,6 +26,7 @@
     "test:android:sl": "wdio run ./config/wdio.conf.android.sl.ts",
     "test:android:perfecto": "wdio run ./config/wdio.conf.android.perfecto.ts",
     "test:android:tb": "wdio run ./config/wdio.conf.android.tb.ts",
+    "test:android:lambda": "wdio run ./config/wdio.conf.android.lambdaT.ts",
     "test:local": "wdio run ./config/wdio.conf.local.ts"
   },
   "dependencies": {
