@@ -2,10 +2,6 @@
 
 e2e-test template with hybrid mob apps
 
-```sh
-
-```
-
 ## Setup
 
 ### Install software and check out the project
@@ -53,19 +49,15 @@ e2e-test template with hybrid mob apps
 
 ### How to run the android tests on windows
 
-```sh
-
-```
-
 We defined a default configuration (config/wdi.conf.local.ts) for Android which will be executed when you run "npm run test:local".
 
 Be sure that you have:
 
-- Install Java latest via https://www.java.com/ru/download/manual.jsp
-- Set the environment variable called `JAVA_HOME` to the jre directory (C:\Program Files\Android\Android Studio\jre\)
+- Install Java JDK latest via https://www.oracle.com/java/technologies/downloads/
+- Set the environment variable called `JAVA_HOME` https://www.youtube.com/watch?v=SUMiiMtpiwA
 - Install Node v16+ https://nodejs.org/uk
 - installed the latest Android Studio version https://developer.android.com/studio
-- Add `ANDROID_HOME` to path in OS system variables
+- Add `ANDROID_HOME` to path in OS system variables https://www.youtube.com/watch?v=wnkynX7Yreo
 - Install Appium by command: `npm install -g appium`
 - Install Appium inspector v2+ https://github.com/appium/appium-inspector/releases
 - Install Appium drivers (uiautomator2, xcuitest and etc..; `appium driver install uiautomator2`)
