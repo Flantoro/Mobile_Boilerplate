@@ -18,4 +18,6 @@ export const config = {
       waitForAvailableLicense: true,
     },
   ],
+  maxInstances: 1,
+  connectionRetryCount: 3,
 };

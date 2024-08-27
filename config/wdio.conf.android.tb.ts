@@ -14,7 +14,7 @@ export const config = {
       },
     },
   ],
-  logLevel: "debug",
+  logLevel: "info",
   coloredLogs: true,
   screenshotPath: "screenshots",
   waitforTimeout: 200000,

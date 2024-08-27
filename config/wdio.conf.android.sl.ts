@@ -21,4 +21,10 @@ export const config = {
       },
     },
   ],
+  maxInstances: 1,
+  logLevel: "info",
+  bail: 0,
+  waitforTimeout: 20000,
+  connectionRetryTimeout: 90000,
+  connectionRetryCount: 3,
 };

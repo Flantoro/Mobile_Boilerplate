@@ -1,4 +1,4 @@
-# e2e-tests, wdio v8, appium v2, hybrid app (android, ios), browserstack
+# e2e-tests, wdio v8, appium v2, hybrid app (android), browserstack, saucelabs, perfecto.io, lambdatest and testingBot
 
 e2e-test template with hybrid mob apps
 
@@ -18,10 +18,38 @@ e2e-test template with hybrid mob apps
 
 ## Setup with Browserstack
 
-- Add .env file with next variables `BROWSERSTACK_USERNAME`, `BROWSERSTACK_ACCESS_KEY`, `BROWSERSTACK_ANDROID_APP_ID` and `BROWSERSTACK_IOS_APP_ID`
+- Add .env file with next variables `BROWSERSTACK_USERNAME`, `BROWSERSTACK_ACCESS_KEY`
 - Sign in inside browserstack and upload your mobile apps (.apk and .ipa)
 - Update `.env` file
 - `npm run test:android:bs`
+
+## Setup with Sauce Labs
+
+- Add .env file with next variables `SAUCELABS_USER`, `SAUCELABS_USER`
+- Sign in inside Sauce Labs and upload your mobile apps (.apk and .ipa)
+- Update `.env` file
+- `npm run test:android:sl`
+
+## Setup with Perfecto.io
+
+- Add .env file with next variable `PERFECTO_SECURITY_TOKEN`
+- Sign in inside the Perfecto.io and upload your mobile apps (.apk and .ipa)
+- Update `.env` file
+- `npm run test:android:perfecto`
+
+## Setup with LambdaTest
+
+- Add .env file with next variables `LAMBDATEST_USERNAME`, `LAMBDATEST_KEY`
+- Sign in inside Sauce Labs and upload your mobile apps (.apk and .ipa)
+- Update `.env` file
+- `npm run test:android:lambda`
+
+## Setup with TestingBot
+
+- Add .env file with next variables `TESTINGBOT_USER`, `TESTINGBOT_KEY`
+- Sign in inside Sauce Labs and upload your mobile apps (.apk and .ipa)
+- Update `.env` file
+- `npm run test:android:tb`
 
 ### How to run the android tests on windows
 
@@ -29,7 +57,7 @@ e2e-test template with hybrid mob apps
 
 ```
 
-We defined a default configuration (config/wdio.android.conf.js) for Android which will be executed when you run "npm run test:android".
+We defined a default configuration (config/wdi.conf.local.ts) for Android which will be executed when you run "npm run test:local".
 
 Be sure that you have:
 
@@ -45,7 +73,7 @@ Be sure that you have:
 - plugged in any android device into your computer. Leave it unlocked.
 - allowed USB-Debugging on the connected android device
 - run `adb devices` to check device name( device id )
-- set the platform version, device name and path to apps(apk/ipa) inside android config (config/wdio.adndroid.conf.js) to the version on your android device.
+- set the platform version, device name and path to apps(apk/ipa) inside android config (config/wdio.conf.local.js) to the version on your android device.
 - run `appium` in cmd
 - now you can interact with your apps through the appium inspector on your PC
 
